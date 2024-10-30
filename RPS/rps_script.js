@@ -14,7 +14,7 @@ change();
 
 setInterval(change, 2 * 700);
 
-//RPS
+//RPS 
 
 let userScore = 0;
 let computerScore = 0;

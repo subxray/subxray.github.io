@@ -4,7 +4,7 @@
 
 document.querySelectorAll('input[type="text"]').forEach(input => {
     
-    // clear letter on focus (for tabbing)
+    // clear letter on focus (for tabbing) 
     input.addEventListener('focus', (event) => {
         event.target.value = '';
     });

@@ -7,7 +7,7 @@
   --green: #538d4e;
   --sans-serif: "Helvetica", "Arial", sans-serif;
 }
-
+/* body */
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -53,4 +53,4 @@ function change() {
 }
 
 change();
-setInterval(change, 2500); // change text every 2 seconds
+setInterval(change, 2500); // change text every 2 seconds 
