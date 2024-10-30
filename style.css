@@ -73,9 +73,12 @@ a.nav-link{
 	text-transform: uppercase;
 }
 
+
+/*
 .active{
-	/* background: var(--main-decor-color); - Highlights home in navbar */ 
+	 background: var(--main-decor-color); - Highlights home in navbar  
 }
+*/
 
 .nav-link:hover {
 	color: #000000;
@@ -228,6 +231,7 @@ h3:hover{
   background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
     background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
     -webkit-background-clip: text;
+	background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
