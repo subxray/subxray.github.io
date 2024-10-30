@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1000; user-scalable=0;"/>
+
+		<link rel="shortcut icon" href="/wslogo1.png" type="image/x-icon"/>
+    <meta property="og:site_name" content="Wordle">
+    <meta property="og:url" content="https://www.nytimes.com/games/wordle/index.html/">
+    <meta property="og:title" content="Wordle Solver">
+    <meta property="og:description" content="Haxs for wordle. Just make your first guess, enter the keys and you'll get a list of possible outcomes">
+    <meta property="og:type" content="website">
+    <meta name="og:image" itemprop="image" content="/wslogo1.png">
+    <meta name="theme-color" content="#00ccff">
+  
+  <title>Wordle Solver</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="/WS/ws_style.css">
+
+</head>
+  
+<body>
+<!-- partial:index.partial.html -->
+<main>
+	<article class="instructions">
+    
+		<h1>Wordle Solver</h1>
+    <p>Idk what you're gonna accomplish by cheating in wordle but</p>
+		<p>Enter your <b><a class="a-w" style="color:#0095ff;text-decoration:underline;" target="_blank" href="https://www.nytimes.com/games/wordle/index.html/">Wordle</a></b> guess and mark the letters to find possible solutions.</p>
+    
+	</article>
+  
+	<form class="inputs">
+		<div class="letter">
+			<input class="letter__input" type="text" autocomplete="off" id="one" maxlength="1" tabindex="1"/>
+			<fieldset class="letter__buttons">
+				<input class="letter__radio" type="radio" name="one" value="black" tabindex="6" checked>
+				<input class="letter__radio" type="radio" name="one" value="yellow" tabindex="7">
+				<input class="letter__radio" type="radio" name="one" value="green" tabindex="8">
+			</fieldset>
+		</div>
+    
+		<div class="letter">
+			<input class="letter__input" type="text" autocomplete="off" id="two" maxlength="1" tabindex="2"/>
+			<fieldset class="letter__buttons">
+				<input class="letter__radio" type="radio" name="two" value="black" tabindex="9" checked>
+				<input class="letter__radio" type="radio" name="two" value="yellow" tabindex="10">
+				<input class="letter__radio" type="radio" name="two" value="green" tabindex="11">
+			</fieldset>
+		</div>
+    
+		<div class="letter">
+			<input class="letter__input" type="text" autocomplete="off" id="three" maxlength="1" tabindex="3"/>
+			<fieldset class="letter__buttons">
+				<input class="letter__radio" type="radio" name="three" value="black" tabindex="12" checked>
+				<input class="letter__radio" type="radio" name="three" value="yellow" tabindex="13">
+				<input class="letter__radio" type="radio" name="three" value="green" tabindex="14">
+			</fieldset>
+		</div>
+    
+		<div class="letter">
+			<input class="letter__input" type="text" autocomplete="off" id="four" maxlength="1" tabindex="4"/>
+			<fieldset class="letter__buttons">
+				<input class="letter__radio" type="radio" name="four" value="black" tabindex="15" checked>
+				<input class="letter__radio" type="radio" name="four" value="yellow" tabindex="16">
+				<input class="letter__radio" type="radio" name="four" value="green" tabindex="17">
+			</fieldset>
+		</div>
+    
+		<div class="letter">
+			<input class="letter__input" type="text" autocomplete="off" id="five" maxlength="1" tabindex="5"/>
+			<fieldset class="letter__buttons">
+				<input class="letter__radio" type="radio" name="five" value="black" tabindex="18" checked>
+				<input class="letter__radio" type="radio" name="five" value="yellow" tabindex="19">
+				<input class="letter__radio" type="radio" name="five" value="green" tabindex="20">
+			</fieldset>
+		</div>
+    
+		<input class="submit" type="submit" value="Find Solutions" tabindex="21" disabled/>
+    
+	</form>
+	<section class="suggestions"></section>
+</main>
+  
+<!-- partial -->
+  <script  src="/WS/ws_script.js"></script>
+
+</body>
+</html>

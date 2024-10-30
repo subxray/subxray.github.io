@@ -1,0 +1,162 @@
+<html>
+   <head>
+
+    <meta property="og:site_name" content="meth>math">
+    <meta property="og:url" content="https://subxray.github.io/calculator.html">
+    <meta property="og:title" content="Epik Calculator">
+    <meta property="og:description" content="A veri epik working calculator by the raysist.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#00ccff">
+    <meta name="og:image" itemprop="image" content="/logo-1-calculator.png">
+    <link rel="shortcut icon" href="/logo-1-calculator.png" 
+      
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script type="text/javascript">
+      $(document).on('mousemove', function(e){
+         $('.cur').css({
+            left: e.pageX,
+            top: e.pageY
+         }) 
+      })
+   </script>
+   <body>
+      <form name="calculator" id="calc">
+        <h1 class="h-1">Veri Epik Calculator</h1>
+         <table>
+            <tr>
+               <td colspan="4">
+                  <input type="text" name="display" id="display" disabled>
+               </td>
+            </tr>
+            <tr>
+               <td><input type="button" name="one" value="1" onclick="calculator.display.value += '1'"></td>
+               <td><input type="button" name="two" value="2" onclick="calculator.display.value += '2'"></td>
+               <td><input type="button" name="three" value="3" onclick="calculator.display.value += '3'"></td>
+               <td><input type="button" class="operator" name="plus" value="+" onclick="calculator.display.value += '+'"></td>
+            </tr>
+            <tr>
+               <td><input type="button" name="four" value="4" onclick="calculator.display.value += '4'"></td>
+               <td><input type="button" name="five" value="5" onclick="calculator.display.value += '5'"></td>
+               <td><input type="button" name="six" value="6" onclick="calculator.display.value += '6'"></td>
+               <td><input type="button" class="operator" name="minus" value="-" onclick="calculator.display.value += '-'"></td>
+            </tr>
+            <tr>
+               <td><input type="button" name="seven" value="7" onclick="calculator.display.value += '7'"></td>
+               <td><input type="button" name="eight" value="8" onclick="calculator.display.value += '8'"></td>
+               <td><input type="button" name="nine" value="9" onclick="calculator.display.value += '9'"></td>
+               <td><input type="button" class="operator" name="times" value="x" onclick="calculator.display.value += '*'"></td>
+            </tr>
+            <tr>
+               <td><input type="button" id="decimal" name="decimal" value="." onclick="calculator.display.value += '.'"></td>
+               <td><input type="button" name="zero" value="0" onclick="calculator.display.value += '0'"></td>
+               <td><input type="button" value="xʸ" name="power" onclick="calculator.display.value += '**('"></td>
+               <td><input type="button" class="operator" name="div" value="÷" onclick="calculator.display.value += '/'"></td>
+            </tr>
+            <tr>
+               <td rowspan="2">
+                  <input type="button" name="doit" class="equals" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
+               </td>
+               <td><input type="button" name="bracketopen" class="bo" value="(" onclick="calculator.display.value += '('"></td>
+               <td><input type="button" name="bracketclose" class="bc" value=")" onclick="calculator.display.value += ')'"></td>
+               <td><input type="button" name="clear" class="clear" value="Clear" onclick="calculator.display.value = ''"></td>           
+            </tr>
+         </table>
+      </form>
+      <div class="cur"></div>
+   </body>
+   <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap');
+      body{
+         margin: 0px;
+         padding: 0px;
+         font-family: 'Kumbh Sans', sans-serif;
+/*         background-color: #0b0c0f; */
+      }
+/*      
+.h-1{
+  color: #fff;
+}
+*/
+
+      input{
+         font-family: 'Kumbh Sans', sans-serif;
+      }
+
+      #calc{
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%,-50%);
+         z-index: 10;
+      }
+
+      input[type=button]{
+         height: 6vw;
+         width: 10vw;
+         position: relative;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border: none;
+         border-radius: 10px;
+         font-size: 2vw;
+         cursor: pointer;
+         transition: 0.6s ease;
+         mix-blend-mode: difference;
+      }
+
+      input[type=button]:hover{
+         background-color: #bfbfbf; /* Color <on click> button */
+      }
+
+      input[type=text]{
+         width: 100%;
+         height: 6vw;
+         border-radius: 10px;
+         padding-left: 10px;
+         font-size: 20px;
+
+         border: 1px solid #0086FF; /* Color for the border of input box */
+      }
+
+      .operator{
+         background-color: #A1A1A1; /* BG Color for operaters (+ - * /) */
+         color: #fff; /* Text color */
+      }
+
+     .clear{
+         background-color: #ff0000; /* BG color for clear button */
+         color: #fff;
+}
+      
+
+      .equals{
+         background-color: #1EE000; /* BG color for equal button */
+         color: #000;
+         width: 50%;
+      }
+
+      .cur{
+/* Cursor */
+         position: absolute;
+         top: 0%;
+         left: 0%;
+         height: 10px;
+         width: 10px;
+         border-radius: 5px;
+         background-color: #000; /* Color for cursor */
+         transform: translate(-50%,-50%);
+         transition: 0.6s cubic-bezier(0.02, 1.23, 0.98, 0.93);
+         z-index: 0;
+      }
+
+      @media only screen and (max-width: 800px){
+         input[type=button]{
+            width: 15vw;
+            height: 11vw;
+            font-size: 4vw;
+         }
+      }
+   </style>
+   </head>
+</html>
