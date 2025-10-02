@@ -38,7 +38,7 @@ window.onload = () => navSlide();
 
 //text animation
 let i = 0;
-let names = ["A Web developer and designer", "A Node.js developer", "A Discord bot developer"];
+let names = ["A Web developer and designer", "Linux gooner", "A Discord bot developer"];
 
 function change() {
   document.querySelectorAll(".my-role").forEach(el => {
